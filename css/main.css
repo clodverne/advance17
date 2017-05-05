@@ -1,0 +1,183 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  -webkit-animation-name: anim-color;
+  -moz-animation-name: anim-color;
+  -o-animation-name: anim-color;
+  animation-name: anim-color;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -moz-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -o-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-animation: anim-color 2s easy 1s infinity reverse;
+  -moz-animation: anim-color 2s easy 1s infinity reverse;
+  -o-animation: anim-color 2s easy 1s infinity reverse;
+  animation: anim-color 2s easy 1s infinity reverse;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-color {
+  0% {
+    background-color: gray;
+    margin-left: 0;
+  }
+
+  to {
+    background-color: purple;
+    margin-left: 400px;
+  }
+}
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-image: url("../img/fon.png");
+}
+
+.block,
+.main {
+  text-align: center;
+}
+
+.main {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+
+.main h1,
+.main h2 {
+  font-family: 'Ubuntu',sans-serif;
+  color: #0bbaf0;
+  text-transform: uppercase;
+}
+
+.main h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.main h2 {
+  font-size: 24px;
+}
+
+.main .border-bottom {
+  display: block;
+  margin: auto;
+  margin-top: 2.2rem;
+  width: 12rem;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.block {
+  margin: auto;
+  width: 86rem;
+}
+
+.block .panel-heading {
+  background-color: #0bbaf0;
+  height: 6rem;
+  margin-bottom: 1rem;
+}
+
+.block .panel-heading h4 {
+  font-size: 2.2rem;
+  line-height: 4rem;
+  font-family: "Ubuntu";
+  color: #fff;
+}
+
+.block .panel-heading h4 a {
+  text-decoration: none;
+}
+
+.panel-body {
+  font-size: 2.2rem;
+  font-family: "Ubuntu";
+  color: #535353;
+  margin-top: -1rem;
+  border: 0;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+
+@media (max-width:450px) {
+  html {
+    font-size: 7px;
+  }
+
+  .block {
+    text-align: center;
+    margin: auto;
+    width: 50rem;
+  }
+
+  .block .panel-heading {
+    background-color: #0bbaf0;
+    height: 14rem;
+    margin-bottom: 1rem;
+  }
+
+  .block .panel-heading h4 {
+    font-size: 2.1sem;
+    font-family: "Ubuntu";
+    color: #fff;
+  }
+
+  .block .panel-heading h4 a {
+    text-decoration: none;
+  }
+}
+
+@media (min-width:450px) and (max-width:750px) {
+  html {
+    font-size: 9px;
+  }
+
+  .block {
+    text-align: center;
+    margin: auto;
+    width: 65rem;
+  }
+
+  .block .panel-heading {
+    background-color: #0bbaf0;
+    height: 12rem;
+    margin-bottom: 1rem;
+  }
+
+  .block .panel-heading h4 {
+    font-size: 2.1sem;
+    font-family: "Ubuntu";
+    color: #fff;
+  }
+
+  .block .panel-heading h4 a {
+    text-decoration: none;
+  }
+}
